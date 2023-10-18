@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arvo:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Slabo 27px", serif;
+  box-sizing: border-box;
+  /* overflow: hidden; */
+  overflow-x: hidden;
+}
+/* @media (max-width: 480px){
+button{
+  padding: 10px;
+  font-size: .8rem;
+}
+input{
+  text-align: center;
+  background: none;
+}
+.row{
+  background-color: #1452ce;
+}
+
+} */
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #153677, #604168);
+  padding: 10px;
+}
+
+.todo-app {
+  width: 100%;
+  max-width: 540px;
+  background: #fff;
+  margin: 10% auto;
+  padding: 40px 30px 70px;
+  border-radius: 0.8rem;
+}
+.todo-app h2 {
+  color: #002765;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.1rem;
+  gap: 1rem;
+  font-size: 2rem;
+  letter-spacing: 1.2px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #edeef0;
+  border-radius: 1.6rem;
+  padding-left: 8px;
+  margin-bottom: 1.3rem;
+  flex-wrap: wrap;
+  
+}
+
+
+input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 0.76rem;
+  font-size: 1.2rem;
+  font-family: "Roboto Mono", monospace;
+  
+}
+button {
+  border: none;
+  outline: none;
+  padding: 1rem 2.4rem;
+  background: #4592da;
+  color: #fff;
+  font-family: "Arvo", serif;
+  font-size: 1.2rem;
+  border-radius: 2.4rem;
+  cursor: pointer;
+}
+ul li {
+   
+  font-size: 1.3rem;
+  letter-spacing: 1.6px;
+  padding: 12px 8px 12px 3rem;
+  user-select: none;
+  cursor: pointer;
+  list-style: none;
+  position: relative;
+}
+ul li::before {
+  content: "";
+  position: absolute;
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+  background-image: url(image/download.png);
+
+  background-size: cover;
+  background-position: center;
+  top: 10px;
+  left: 6px;
+}
+ul li.checked {
+  color: #555;
+  text-decoration: line-through 2.4px;
+}
+
+ul li.checked::before {
+  content: '';
+  background-image: url(image/190411.png);
+}
+
+ul li span {
+  background-image: url(image/crox.jpg);
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  right: 0;
+  top: 7px;
+  width: 40px;
+  height: 40px;
+  font-size: 1.85rem;
+  /* transition: 0.33s ease-in-out; */
+  line-height: 2.2rem;
+ 
+  border-radius: 50%;
+  padding-left: 5px;
+}
+ul li span:hover {
+  filter: contrast(150%);
+  background-image: url(image/vector60-2284-01.jpg);
+}
+
+
